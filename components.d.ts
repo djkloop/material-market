@@ -4,9 +4,13 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AAvatar: typeof import('@arco-design/web-vue')['Avatar']
+    ABadge: typeof import('@arco-design/web-vue')['Badge']
     AButton: typeof import('@arco-design/web-vue')['Button']
     ALayout: typeof import('@arco-design/web-vue')['Layout']
+    ALink: typeof import('@arco-design/web-vue')['Link']
     AppLogo: typeof import('./src/components/Application/src/AppLogo.vue')['default']
+    ASpace: typeof import('@arco-design/web-vue')['Space']
     Nav: typeof import('./src/components/Nav/Nav.vue')['default']
   }
 }

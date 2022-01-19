@@ -90,6 +90,60 @@
         display: flex;
       }
     }
+
+    /// TODO: 抽一个menu组件
+    &-menu {
+      display: flex;
+
+      &-item {
+        display: flex;
+        padding: 18px 8px;
+        align-items: center;
+
+        .link {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          font-weight: bold;
+          color: var(--color-text-1);
+
+          svg {
+            transition: all .4s;
+          }
+
+          &:hover {
+            .arco-link-icon {
+              svg {
+                transform: rotate(180deg);
+              }
+            }
+          }
+
+          span {
+            margin-left: 6px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &-action {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 0 8px;
+      }
+
+
+
+      .link {
+        color: var(--color-text-1);
+      }
+    }
   }
 
 
