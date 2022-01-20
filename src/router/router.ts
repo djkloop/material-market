@@ -1,12 +1,20 @@
 import type { App } from 'vue';
 import { createRouter, createWebHashHistory } from 'vue-router';
 import { LAYOUT } from '/@/router/constant';
-import Material from '/@/pages/Material/Material.vue';
+import Material from '../pages/Material/index.vue';
+import Home from '/@/pages/Home/index.vue';
 
 
 const basic = [
-  { path: '/', component: LAYOUT },
-  { path: '/material', component: Material },
+  {
+    path: '/',
+    component: LAYOUT,
+    redirect: '/home',
+    children: [
+      { path: '/home', component: Home },
+      { path: '/material', component: Material }
+    ]
+  },
 ]
 
 
