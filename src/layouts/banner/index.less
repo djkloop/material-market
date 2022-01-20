@@ -7,6 +7,90 @@
   height: 369px;
   margin-top: 60px;
   margin-bottom: 64px;
-  background-color: var(--color-border-1);
+  background-color: #f6f5fa;
   color: var(--color-black);
+
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+
+      div {
+        margin: 20px 0;
+      }
+
+      button.docs {
+        border: 2px solid var(--color-black);
+        color: var(--color-black);
+        font-weight: bold;
+
+        &:hover {
+          color: rgb(var(--primary-5));
+          background-color: transparent;
+          border-color: rgb(var(--primary-5));
+        }
+      }
+
+
+      .arco-input-wrapper,
+      .arco-select-view-single {
+        background: white;
+        border: none;
+
+        .arco-input {
+          &:focus {
+            border: none;
+            border-color: transparent;
+          }
+        }
+      }
+
+      .arco-input-prepend,
+      .arco-input-append {
+        border: none;
+        background: white;
+
+        .search-btn {
+          color: var(--color-black);
+
+          &:hover {
+            background: transparent;
+          }
+        }
+      }
+
+      .arco-select {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+      .select {
+        border: none;
+
+
+        .arco-select-view-single {
+          &:hover {
+            background-color: transparent;
+            border-color: transparent;
+          }
+        }
+      }
+
+      .select-compose {
+        width: 320px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, .1)
+      }
+    }
+
+    &-right {
+      width: 460px;
+    }
+  }
+
 }

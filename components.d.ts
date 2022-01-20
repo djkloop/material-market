@@ -7,9 +7,14 @@ declare module 'vue' {
     AAvatar: typeof import('@arco-design/web-vue')['Avatar']
     ABadge: typeof import('@arco-design/web-vue')['Badge']
     AButton: typeof import('@arco-design/web-vue')['Button']
+    ADoption: typeof import('@arco-design/web-vue')['Doption']
+    ADropdown: typeof import('@arco-design/web-vue')['Dropdown']
+    AInput: typeof import('@arco-design/web-vue')['Input']
     ALayout: typeof import('@arco-design/web-vue')['Layout']
     ALink: typeof import('@arco-design/web-vue')['Link']
+    AOption: typeof import('@arco-design/web-vue')['Option']
     AppLogo: typeof import('./src/components/Application/src/AppLogo.vue')['default']
+    ASelect: typeof import('@arco-design/web-vue')['Select']
     Nav: typeof import('./src/components/Nav/Nav.vue')['default']
   }
 }

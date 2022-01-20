@@ -6,7 +6,11 @@
       alt="logo"
       title="logo"
     />
-    <div class="ml-2 truncate md:opacity-100" :class="getTitleClass" v-show="showTitle">{{ title }}</div>
+    <div
+      class="ml-2 truncate md:opacity-100 font-mono"
+      :class="getTitleClass"
+      v-show="showTitle"
+    >{{ title }}</div>
   </div>
 </template>
 <script lang="ts">
@@ -29,7 +33,7 @@ export default defineComponent({
     const { prefixCls } = useDesign('app-logo');
     const go = useGo();
     /// TODO: config
-    const title = ref('form-create-market');
+    const title = ref('Form Create Market');
 
     const getAppLogoClass = computed(() => [
       prefixCls
