@@ -9,6 +9,7 @@
   "dependencies": {
     "@arco-design/web-vue": "^2.15.1",
     "@vueuse/core": "^7.5.3",
+    "easy-typer-js": "^2.1.0",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12",
     "vue-types": "^4.1.1-rc.1"

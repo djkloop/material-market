@@ -1,13 +1,38 @@
 <template>
   <div :class="prefixCls" class="max-w-8xl mx-auto">
-    <HomeFilter />
-    <a-button>homehomehome</a-button>
+    <HomeFilter :home-filter-props="material_state" />
+    <HomeContent />
   </div>
 </template>
-<script setup lang="ts" name="Home">
-import HomeFilter from './src/HomeFilter.vue';
+<script lang="ts">
+import { defineComponent, toRefs } from "vue";
 import { useDesign } from '/@/hooks/web/useDesign';
-const { prefixCls } = useDesign('home');
+import { useState } from './useHome';
+
+import HomeContent from "./src/HomeContent.vue";
+import HomeFilter from './src/HomeFilter.vue';
+
+const state = useState();
+export default defineComponent({
+  name: 'Home',
+  components: {
+    HomeFilter,
+    HomeContent
+  },
+  setup() {
+
+    const { prefixCls } = useDesign('home');
+    const state = useState();
+
+    return {
+      prefixCls,
+      ...toRefs(state)
+    }
+  }
+})
+
+
+
 
 </script>
 <style lang="less">
