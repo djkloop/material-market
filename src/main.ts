@@ -7,11 +7,14 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import { setupRouter } from '/@/router/router'
 import ArcoVueIcon from '@arco-design/web-vue/es/icon';
+import { setupGlobComponent } from '/@/components';
 
 async function bootstrap() {
   const app = createApp(App);
 
   app.use(ArcoVueIcon);
+
+  setupGlobComponent(app)
 
   setupRouter(app);
 

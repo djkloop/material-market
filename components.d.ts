@@ -18,7 +18,9 @@ declare module 'vue' {
     AppLogo: typeof import('./src/components/Application/src/AppLogo.vue')['default']
     ASelect: typeof import('@arco-design/web-vue')['Select']
     ASpace: typeof import('@arco-design/web-vue')['Space']
+    ASpin: typeof import('@arco-design/web-vue')['Spin']
     Nav: typeof import('./src/components/Nav/Nav.vue')['default']
+    ScrollView: typeof import('./src/components/ScrollView/ScrollView.vue')['default']
   }
 }
 

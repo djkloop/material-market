@@ -7,24 +7,25 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.15.1",
-    "@vueuse/core": "^7.5.3",
+    "@arco-design/web-vue": "^2.18.1",
+    "@vueuse/core": "^7.7.1",
     "easy-typer-js": "^2.1.0",
-    "vue": "^3.2.25",
-    "vue-router": "^4.0.12",
-    "vue-types": "^4.1.1-rc.1"
+    "v3-infinite-loading": "^1.0.5",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.13",
+    "vue-types": "^4.1.1"
   },
   "devDependencies": {
-    "@types/node": "^17.0.10",
-    "@vitejs/plugin-vue": "^2.0.0",
-    "@vitejs/plugin-vue-jsx": "^1.3.3",
+    "@types/node": "^17.0.21",
+    "@vitejs/plugin-vue": "^2.2.4",
+    "@vitejs/plugin-vue-jsx": "^1.3.8",
     "less": "^4.1.2",
-    "typescript": "^4.4.4",
-    "unplugin-vue-components": "^0.17.13",
-    "vite": "^2.7.2",
-    "vite-plugin-vue-setup-extend": "^0.3.0",
-    "vite-plugin-windicss": "^1.6.3",
-    "vue-tsc": "^0.29.8",
-    "windicss": "^3.4.3"
+    "typescript": "^4.6.2",
+    "unplugin-vue-components": "^0.17.21",
+    "vite": "^2.8.6",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "vite-plugin-windicss": "^1.8.3",
+    "vue-tsc": "^0.32.1",
+    "windicss": "^3.5.1"
   }
 }
