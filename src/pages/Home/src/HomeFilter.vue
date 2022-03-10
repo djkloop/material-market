@@ -1,7 +1,7 @@
 <template>
   <div :class="prefixCls">
-    <a-affix :offsetTop="60" class="filter" target="body">
-      <div class="filter-wrapper flex">
+    <a-affix :offsetTop="60" class="filter">
+      <div class="filter-wrapper flex py-4">
         <div class="text-xl font-mono font-bold mr-7">所有物料({{ material_count }})</div>
         <a-space size="medium">
           <a-select :style="{ width: 'auto', minWidth: '100px' }" placeholder="UI 框架" allow-clear>
@@ -53,8 +53,6 @@ export default defineComponent({
   props,
   setup(props) {
     const { prefixCls } = useDesign('home-filter')
-
-    console.log(props)
 
     return {
       prefixCls,
