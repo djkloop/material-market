@@ -12,4 +12,52 @@
       margin: 0 5px;
     }
   }
+
+  &-plugin {
+    margin: 20px 0 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+
+    &__item {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      width: 300px;
+
+      &__img {
+        width: 300px;
+        height: 200px;
+        position: relative;
+
+        &__bage {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          border-radius: 6px;
+          z-index: 2;
+        }
+      }
+
+      &__title {
+        width: 300px;
+        padding: 10px 10px 0;
+
+        &__desc {
+          white-space: break-spaces;
+        }
+      }
+
+      &__infos {
+        padding: 0 10px 15px;
+
+        &__avatar {
+          border: 1px solid #ccc;
+        }
+      }
+
+      &__times {
+        padding: 0 10px 15px;
+      }
+    }
+  }
 }

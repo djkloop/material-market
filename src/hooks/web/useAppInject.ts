@@ -6,5 +6,6 @@ export function useAppInject() {
 
   return {
     getIsMobile: computed(() => unref(values.isMobile)),
+    getIsDark: computed(() => unref(values.isDark)),
   };
 }

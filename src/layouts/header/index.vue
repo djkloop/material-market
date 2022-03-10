@@ -61,6 +61,10 @@
               </a-badge>
             </li>
             <li>
+              <icon-moon-fill v-if="!getIsDark" size="22" />
+              <icon-sun-fill v-else size="22" />
+            </li>
+            <li>
               <a-avatar :size="32">
                 <template v-if="!isLogin">未登录</template>
                 <template v-else>
@@ -84,7 +88,6 @@ import { AppLogo } from '/@/components/Application';
 import { useDesign } from '/@/hooks/web/useDesign';
 import { propTypes } from '/@/utils/propTypes';
 import { useAppInject } from '/@/hooks/web/useAppInject';
-
 /// props
 const props = {
   fixed: propTypes.bool,
@@ -105,7 +108,7 @@ export default defineComponent({
     const { prefixCls } = useDesign('layout-header');
 
 
-    const { getIsMobile } = useAppInject();
+    const { getIsMobile, getIsDark } = useAppInject();
 
     const getHeaderClass = computed(() => {
       return [
@@ -121,6 +124,7 @@ export default defineComponent({
       isLogin,
       prefixCls,
       getIsMobile,
+      getIsDark,
       getHeaderClass
     }
   }

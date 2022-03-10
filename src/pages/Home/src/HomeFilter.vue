@@ -48,8 +48,6 @@ const props = {
   material_sort: propTypes.string.def(''),
 }
 
-
-
 export default defineComponent({
   name: ' HomeFilter',
   props,

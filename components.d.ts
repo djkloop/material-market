@@ -6,6 +6,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     AAffix: typeof import('@arco-design/web-vue')['Affix']
     AAvatar: typeof import('@arco-design/web-vue')['Avatar']
+    ABackTop: typeof import('@arco-design/web-vue')['BackTop']
     ABadge: typeof import('@arco-design/web-vue')['Badge']
     AButton: typeof import('@arco-design/web-vue')['Button']
     AForm: typeof import('@arco-design/web-vue')['Form']
@@ -18,7 +19,12 @@ declare module 'vue' {
     AppLogo: typeof import('./src/components/Application/src/AppLogo.vue')['default']
     ASelect: typeof import('@arco-design/web-vue')['Select']
     ASpace: typeof import('@arco-design/web-vue')['Space']
+    ASpce: typeof import('@arco-design/web-vue')['Spce']
     ASpin: typeof import('@arco-design/web-vue')['Spin']
+    ATag: typeof import('@arco-design/web-vue')['Tag']
+    ATooltip: typeof import('@arco-design/web-vue')['Tooltip']
+    ATypographyParagraph: typeof import('@arco-design/web-vue')['TypographyParagraph']
+    ATypographyText: typeof import('@arco-design/web-vue')['TypographyText']
     Nav: typeof import('./src/components/Nav/Nav.vue')['default']
     ScrollView: typeof import('./src/components/ScrollView/ScrollView.vue')['default']
   }
